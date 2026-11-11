@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://cartsproutall-github-io.pages.dev/</loc></url>
-<url><loc>https://cartsproutall-github-io.pages.dev/guides.html</loc></url>
-<url><loc>https://cartsproutall-github-io.pages.dev/about.html</loc></url>
-<url><loc>https://cartsproutall-github-io.pages.dev/editorial-policy.html</loc></url>
-<url><loc>https://cartsproutall-github-io.pages.dev/privacy.html</loc></url>
-<url><loc>https://cartsproutall-github-io.pages.dev/disclosure.html</loc></url>
+<url><loc>https://cartsprout.pages.dev/</loc></url>
+<url><loc>https://cartsprout.pages.dev/guides.html</loc></url>
+<url><loc>https://cartsprout.pages.dev/about.html</loc></url>
+<url><loc>https://cartsprout.pages.dev/editorial-policy.html</loc></url>
+<url><loc>https://cartsprout.pages.dev/privacy.html</loc></url>
+<url><loc>https://cartsprout.pages.dev/disclosure.html</loc></url>
+<url><loc>https://cartsprout.pages.dev/categories/food-breakfast.html</loc></url>
+<url><loc>https://cartsprout.pages.dev/categories/kitchen-home.html</loc></url>
+<url><loc>https://cartsprout.pages.dev/categories/toys-hobbies.html</loc></url>
+<url><loc>https://cartsprout.pages.dev/categories/everyday-essentials.html</loc></url>
+<url><loc>https://cartsprout.pages.dev/categories/electronics.html</loc></url>
+<url><loc>https://cartsprout.pages.dev/categories/electrical-wiring.html</loc></url>
+<url><loc>https://cartsprout.pages.dev/categories/automotive-machinery.html</loc></url>
 </urlset>
