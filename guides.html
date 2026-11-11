@@ -14,6 +14,22 @@
 .warning{background:#fff5e7;border:1px solid #f2dfc3;border-radius:14px;padding:17px 19px;margin:24px 0}.warning p{margin:0;color:#65563f;font-size:14px}
 footer{border-top:1px solid var(--line);padding:24px 0 38px;color:var(--muted);font-size:13px}.footlinks{display:flex;gap:17px;flex-wrap:wrap}.footlinks a{color:var(--g2);text-decoration:none}
 @media(max-width:650px){.topic-grid{grid-template-columns:1fr}.hero{padding-top:34px}.guide h2{font-size:24px}}
+
+/* CartSprout premium 3D bubbly finish */
+:root{--g:#15543d;--g2:#287653;--cream:#fbfcf6;--ink:#1e3027;--muted:#68776d;--line:#e5ecdf;--soft:#f0f6e9}
+body{background:radial-gradient(ellipse at 8% 2%,#edf5e2 0,transparent 34%),var(--cream)}
+.brand{filter:drop-shadow(0 3px 0 #dce8d2)}
+.hero{position:relative;overflow:hidden;border:1px solid #e2eadb;border-radius:30px;background:linear-gradient(145deg,#fff,#f0f7e8);padding:50px 34px 40px;margin-top:20px;box-shadow:0 8px 0 #e0ead8,0 18px 34px #244c3210,inset 0 2px 0 #fff}
+.hero:after{content:"";position:absolute;width:190px;height:190px;right:5%;top:-90px;border-radius:50%;background:radial-gradient(circle at 30% 28%,#fff 0 8%,#dcefc7 9% 56%,#b8d69a 100%);box-shadow:inset -12px -14px 22px #8eb77b30,0 12px 25px #244c3218}
+.contents a{background:linear-gradient(145deg,#fff,#edf5e5);border:1px solid #e2eadb;box-shadow:0 4px 0 #dfe9d6;transition:transform .18s}
+.contents a:hover{transform:translateY(-3px)}
+.topic{border:1px solid #e4ebdf;border-radius:21px;background:linear-gradient(145deg,#fff,#fdfefb);box-shadow:0 6px 0 #e5ecdf,0 12px 24px #244c3210,inset 0 2px 0 #fff;transition:transform .2s,box-shadow .2s}
+.topic:hover{transform:translateY(-3px);box-shadow:0 9px 0 #dce8d2,0 18px 28px #244c3218}
+.check{border:1px solid #e2eadb;border-radius:18px;background:linear-gradient(145deg,#f8fbf2,#edf5e5);box-shadow:0 5px 0 #e1ead9}
+.warning{border-radius:18px;box-shadow:0 5px 0 #f0e2ce}
+@media(max-width:650px){.hero{padding:36px 22px 30px;border-radius:24px}.topic{border-radius:18px}.topic:hover{transform:none}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important}}
+
 </style></head><body>
 <header><div class="wrap"><a class="brand" href="/">CartSprout</a></div></header>
 <main class="wrap">
