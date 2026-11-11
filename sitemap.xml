@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url><loc>https://cartsproutall-github-io.pages.dev/</loc></url>
-<url><loc>https://cartsproutall-github-io.pages.dev/guides</loc></url>
-<url><loc>https://cartsproutall-github-io.pages.dev/privacy</loc></url>
-<url><loc>https://cartsproutall-github-io.pages.dev/disclosure</loc></url>
-<url><loc>https://cartsproutall-github-io.pages.dev/publisher</loc></url>
+<url><loc>https://cartsproutall-github-io.pages.dev/guides.html</loc></url>
+<url><loc>https://cartsproutall-github-io.pages.dev/about.html</loc></url>
+<url><loc>https://cartsproutall-github-io.pages.dev/editorial-policy.html</loc></url>
+<url><loc>https://cartsproutall-github-io.pages.dev/privacy.html</loc></url>
+<url><loc>https://cartsproutall-github-io.pages.dev/disclosure.html</loc></url>
+<url><loc>https://cartsproutall-github-io.pages.dev/publisher.html</loc></url>
 </urlset>
