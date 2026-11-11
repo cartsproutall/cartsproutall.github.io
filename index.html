@@ -11,7 +11,7 @@
 .main-category{flex:0 0 176px;min-height:122px;border:1px solid #e1e9dc;border-radius:17px;background:#fff;padding:15px;text-align:left;display:flex;flex-direction:column;justify-content:space-between;gap:12px;cursor:pointer;color:#304338;transition:.18s}
 .main-category:hover,.main-category.active{border-color:#6b9950;background:#f0f6e8;box-shadow:0 7px 18px #244c3212}
 .category-icon{font-size:28px;line-height:1}
-.main-category strong{font-size:14px}
+.main-category strong{font-size:14px}.category-page-link{color:inherit;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px;position:relative;z-index:3}.category-page-link:hover{color:#15543d}
 .subcategory-panel{margin-top:2px;padding:17px 18px;background:#f1f5eb;border-radius:16px}
 .subcategory-label{display:block;font-size:12px;font-weight:800;color:#45664b;margin-bottom:11px}
 .subcategory-list{display:flex;gap:8px;flex-wrap:wrap}
@@ -19,14 +19,7 @@
 .subcategory-chip.active,.subcategory-chip:hover{background:#24563c;border-color:#24563c;color:white}
 .ad-slot{min-height:100px;margin:22px auto 28px;border:1px dashed #dce4d8;border-radius:12px;background:#fafbf7;display:flex;align-items:center;justify-content:center;color:#9aa59a;font-size:10px;letter-spacing:1.5px;text-transform:uppercase}
 .ad-slot-bottom{margin-top:26px}
-.floating-category-dock{position:fixed;z-index:50;top:94px;right:14px;display:flex;align-items:center;gap:7px;max-width:min(365px,calc(100vw - 28px));padding:7px 9px 7px 7px;border:1px solid #e1e9dc;border-radius:999px;background:#ffffffed;box-shadow:0 8px 28px #193d2a20;backdrop-filter:blur(12px);touch-action:pan-x;user-select:none}
-.dock-grip{width:27px;height:38px;border:0;border-radius:20px;background:#edf3e7;color:#45634a;font-size:20px;cursor:grab;flex:none;touch-action:none}
-.dock-items{display:flex;align-items:center;gap:7px;overflow-x:auto;scrollbar-width:none;max-width:310px}
-.dock-items::-webkit-scrollbar{display:none}
-.dock-item{width:40px;height:40px;border:1px solid #e5ebdf;border-radius:50%;background:#f6f8f2;font-size:19px;display:grid;place-items:center;flex:0 0 40px;cursor:pointer;transition:.16s}
-.dock-item:hover,.dock-item.active{background:#e4f0d5;border-color:#82a866;transform:translateY(-2px)}
-.floating-category-dock.dragging{box-shadow:0 14px 35px #193d2a35;cursor:grabbing}
-@media(max-width:650px){.floating-category-dock{top:78px;right:8px;max-width:calc(100vw - 16px)}.dock-items{max-width:calc(100vw - 78px)}.dock-item{width:36px;height:36px;flex-basis:36px;font-size:17px}.dock-grip{height:35px;width:24px}.main-category{flex-basis:148px;min-height:108px}.category-next{width:40px;height:40px}.ad-slot{min-height:80px;margin:16px auto 22px}}
+.main-category{flex-basis:148px;min-height:108px}.category-next{width:40px;height:40px}.ad-slot{min-height:80px;margin:16px auto 22px}}
 
 /* CartSprout premium 3D bubbly finish */
 :root{--g:#15543d;--g2:#287653;--lime:#d9f27a;--cream:#fbfcf6;--ink:#1e3027;--muted:#68776d;--line:#e5ecdf;--soft:#f0f6e9}
@@ -56,26 +49,22 @@ header{position:relative;z-index:60}
 .shop-button{border-radius:12px;box-shadow:0 4px 0 #0d3929;transition:transform .16s,box-shadow .16s}
 .shop-button:hover{transform:translateY(-2px);box-shadow:0 6px 0 #0d3929}
 .ad-slot{border-radius:18px;background:linear-gradient(145deg,#fff,#f7f9f3);border-color:#dfe8d7}
-.floating-category-dock{border:1px solid #e3ecdc;background:#ffffffed;box-shadow:0 8px 0 #e8efe2,0 16px 32px #193d2a20,inset 0 2px 0 #fff}
-.dock-grip{box-shadow:inset 0 2px 2px #fff,0 3px 0 #dce8d1}
-.dock-item{background:linear-gradient(145deg,#fff,#edf4e5);box-shadow:0 3px 0 #dce7d3,0 5px 10px #244c3210,inset 0 2px 2px #fff}
-.dock-item:hover,.dock-item.active{transform:translateY(-3px);box-shadow:0 5px 0 #cbdcbb,0 8px 13px #244c321c}
+
 .about{background:radial-gradient(ellipse at 10% 15%,#eaf3df 0,transparent 50%)}
 @media(max-width:650px){.hero{border-radius:26px}.main-category{flex-basis:158px;min-height:128px}.product-card{border-radius:19px}.product-card:hover{transform:translateY(-2px)}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
 
-</style></head><body><div class="wrap"><header><a class="logo" href="/">Cart<span>Sprout</span></a><nav class="nav" aria-label="Main navigation"><a href="#about">About</a><a href="#products">Products</a></nav></header><div class="floating-category-dock" id="floating-category-dock" aria-label="Quick category shortcuts"><button class="dock-grip" type="button" aria-label="Drag category shortcuts" title="Drag shortcuts">⠿</button><div class="dock-items"><button type="button" class="dock-item" data-dock-category="food" aria-label="Food and breakfast" title="Food & breakfast">🥑</button><button type="button" class="dock-item" data-dock-category="kitchen" aria-label="Kitchen and home" title="Kitchen & home">🍳</button><button type="button" class="dock-item" data-dock-category="toys" aria-label="Toys and hobbies" title="Toys & hobbies">🧸</button><button type="button" class="dock-item" data-dock-category="everyday" aria-label="Everyday essentials" title="Everyday essentials">🧺</button><button type="button" class="dock-item" data-dock-category="electronics" aria-label="Electronics" title="Electronics">🔌</button><button type="button" class="dock-item" data-dock-category="electrical" aria-label="Electrical and wiring" title="Electrical & wiring">💡</button><button type="button" class="dock-item" data-dock-category="auto" aria-label="Automotive and machinery" title="Automotive & machinery">⚙️</button></div></div>
-<main><section class="hero"><div class="hero-content"><div class="eyebrow">A simpler way to shop</div><h1>Find what you need.<br><em>Choose where to shop.</em></h1><p>Discover useful products across food, home, electronics and automotive essentials. Choose a retailer to explore its available options.</p><div class="hero-actions"><a class="primary-link" href="#categories">Explore categories ↓</a></div></div></section>
+</style></head><body><div class="wrap"><header><a class="logo" href="/">Cart<span>Sprout</span></a><nav class="nav" aria-label="Main navigation"><a href="#about">About</a><a href="#products">Products</a></nav></header><main><section class="hero"><div class="hero-content"><div class="eyebrow">A simpler way to shop</div><h1>Find what you need.<br><em>Choose where to shop.</em></h1><p>Discover useful products across food, home, electronics and automotive essentials. Choose a retailer to explore its available options.</p><div class="hero-actions"><a class="primary-link" href="#categories">Explore categories ↓</a></div></div></section>
 <section class="section" id="categories">
 <div class="section-head"><div><div class="eyebrow">Explore our departments</div><h2>What are you looking for?</h2><p>Choose a main topic to reveal its subcategories and matching products.</p></div><button class="category-next" id="category-next" type="button" aria-label="Scroll to more categories">→</button></div>
 <div class="category-scroller" id="category-scroller" aria-label="Shopping categories">
-<a class="main-category active" href="/categories/food-breakfast.html" data-main-category="food"><span class="category-icon">🥑</span><strong>Food & breakfast</strong></a>
-<a class="main-category" href="/categories/kitchen-home.html" data-main-category="kitchen"><span class="category-icon">🍳</span><strong>Kitchen & home</strong></a>
-<a class="main-category" href="/categories/toys-hobbies.html" data-main-category="toys"><span class="category-icon">🧸</span><strong>Toys & hobbies</strong></a>
-<a class="main-category" href="/categories/everyday-essentials.html" data-main-category="everyday"><span class="category-icon">🧺</span><strong>Everyday essentials</strong></a>
-<a class="main-category" href="/categories/electronics.html" data-main-category="electronics"><span class="category-icon">🔌</span><strong>Electronics</strong></a>
-<a class="main-category" href="/categories/electrical-wiring.html" data-main-category="electrical"><span class="category-icon">💡</span><strong>Electrical & wiring</strong></a>
-<a class="main-category" href="/categories/automotive-machinery.html" data-main-category="auto"><span class="category-icon">⚙️</span><strong>Automotive & machinery</strong></a>
+<div class="main-category active" role="button" tabindex="0" aria-pressed="true" data-main-category="food"><span class="category-icon">🥑</span><strong><a class="category-page-link" href="/categories/food-breakfast.html">Food & breakfast</a></strong></div>
+<div class="main-category" role="button" tabindex="0" aria-pressed="false" data-main-category="kitchen"><span class="category-icon">🍳</span><strong><a class="category-page-link" href="/categories/kitchen-home.html">Kitchen & home</a></strong></div>
+<div class="main-category" role="button" tabindex="0" aria-pressed="false" data-main-category="toys"><span class="category-icon">🧸</span><strong><a class="category-page-link" href="/categories/toys-hobbies.html">Toys & hobbies</a></strong></div>
+<div class="main-category" role="button" tabindex="0" aria-pressed="false" data-main-category="everyday"><span class="category-icon">🧺</span><strong><a class="category-page-link" href="/categories/everyday-essentials.html">Everyday essentials</a></strong></div>
+<div class="main-category" role="button" tabindex="0" aria-pressed="false" data-main-category="electronics"><span class="category-icon">🔌</span><strong><a class="category-page-link" href="/categories/electronics.html">Electronics</a></strong></div>
+<div class="main-category" role="button" tabindex="0" aria-pressed="false" data-main-category="electrical"><span class="category-icon">💡</span><strong><a class="category-page-link" href="/categories/electrical-wiring.html">Electrical & wiring</a></strong></div>
+<div class="main-category" role="button" tabindex="0" aria-pressed="false" data-main-category="auto"><span class="category-icon">⚙️</span><strong><a class="category-page-link" href="/categories/automotive-machinery.html">Automotive & machinery</a></strong></div>
 </div>
 <div class="subcategory-panel" id="subcategory-panel" aria-live="polite"><span class="subcategory-label">Explore food & breakfast</span><div class="subcategory-list" id="subcategory-list"></div></div>
 </section></main></div>
@@ -98,7 +87,7 @@ function setCategory(key,scrollProducts=false){
  if(!groups[key])return;
  activeMain=key;activeSub='All';
  document.querySelectorAll('.main-category').forEach(b=>b.classList.toggle('active',b.dataset.mainCategory===key));
- document.querySelectorAll('.dock-item').forEach(b=>b.classList.toggle('active',b.dataset.dockCategory===key));
+
  const group=groups[key],panel=document.querySelector('#subcategory-list');
  document.querySelector('.subcategory-label').textContent='Explore '+group.label.toLowerCase();
  panel.innerHTML='';
@@ -119,16 +108,13 @@ function apply(){
  document.querySelector('#filter-label').textContent=activeSub==='All'?'Showing '+groups[activeMain].label:'Showing: '+activeSub;
  document.querySelector('#products-heading').textContent=activeSub==='All'?groups[activeMain].label+' products':activeSub;
 }
-document.querySelectorAll('.main-category').forEach(b=>b.addEventListener('click',()=>setCategory(b.dataset.mainCategory)));
-document.querySelectorAll('.dock-item').forEach(b=>b.addEventListener('click',()=>{const routes={food:'food-breakfast',kitchen:'kitchen-home',toys:'toys-hobbies',everyday:'everyday-essentials',electronics:'electronics',electrical:'electrical-wiring',auto:'automotive-machinery'};location.href='/categories/'+routes[b.dataset.dockCategory]+'.html'}));
+document.querySelectorAll('.main-category').forEach(tile=>{
+ tile.addEventListener('click',e=>{if(e.target.closest('.category-page-link'))return;setCategory(tile.dataset.mainCategory)});
+ tile.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&e.target===tile){e.preventDefault();setCategory(tile.dataset.mainCategory)}});
+});
 document.querySelector('#category-next').addEventListener('click',()=>document.querySelector('#category-scroller').scrollBy({left:260,behavior:'smooth'}));
 search.addEventListener('input',apply);
 document.querySelectorAll('.product-card').forEach(card=>{const select=card.querySelector('.retailer-select'),button=card.querySelector('.shop-button');function update(){const q=encodeURIComponent(card.dataset.name),urls={amazon:'https://www.amazon.com/s?k='+q,walmart:'https://www.walmart.com/search?q='+q,target:'https://www.target.com/s?searchTerm='+q,costco:'https://www.costco.com/CatalogSearch?keyword='+q,samsclub:'https://www.samsclub.com/s/'+q};button.href=urls[select.value]}select.addEventListener('change',update);update()});
-const dock=document.querySelector('#floating-category-dock'),grip=dock.querySelector('.dock-grip');let drag=null;
-grip.addEventListener('pointerdown',e=>{drag={x:e.clientX,y:e.clientY,left:dock.offsetLeft,top:dock.offsetTop};grip.setPointerCapture(e.pointerId);dock.classList.add('dragging')});
-grip.addEventListener('pointermove',e=>{if(!drag)return;const x=Math.max(4,Math.min(window.innerWidth-dock.offsetWidth-4,drag.left+e.clientX-drag.x));const y=Math.max(74,Math.min(window.innerHeight-dock.offsetHeight-4,drag.top+e.clientY-drag.y));dock.style.left=x+'px';dock.style.top=y+'px';dock.style.right='auto'});
-function stopDrag(){drag=null;dock.classList.remove('dragging')}
-grip.addEventListener('pointerup',stopDrag);grip.addEventListener('pointercancel',stopDrag);
 document.querySelector('#year').textContent=new Date().getFullYear();
 setCategory('food');
 </script></body></html>
