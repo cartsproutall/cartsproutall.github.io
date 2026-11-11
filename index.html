@@ -27,6 +27,43 @@
 .dock-item:hover,.dock-item.active{background:#e4f0d5;border-color:#82a866;transform:translateY(-2px)}
 .floating-category-dock.dragging{box-shadow:0 14px 35px #193d2a35;cursor:grabbing}
 @media(max-width:650px){.floating-category-dock{top:78px;right:8px;max-width:calc(100vw - 16px)}.dock-items{max-width:calc(100vw - 78px)}.dock-item{width:36px;height:36px;flex-basis:36px;font-size:17px}.dock-grip{height:35px;width:24px}.main-category{flex-basis:148px;min-height:108px}.category-next{width:40px;height:40px}.ad-slot{min-height:80px;margin:16px auto 22px}}
+
+/* CartSprout premium 3D bubbly finish */
+:root{--g:#15543d;--g2:#287653;--lime:#d9f27a;--cream:#fbfcf6;--ink:#1e3027;--muted:#68776d;--line:#e5ecdf;--soft:#f0f6e9}
+body{background:radial-gradient(ellipse at 8% 4%,#eef6df 0,transparent 30%),var(--cream)}
+header{position:relative;z-index:60}
+.logo{filter:drop-shadow(0 3px 0 #dce8d2)}
+.hero{border:1px solid #ffffff30;border-radius:34px;background:radial-gradient(circle at 88% 18%,#b9e58a45 0 8%,transparent 8.5%),radial-gradient(circle at 80% 88%,#ffffff16 0 13%,transparent 13.5%),linear-gradient(135deg,#103e2d 0%,#1d6544 58%,#32815a 100%);box-shadow:0 22px 48px #174c3528,inset 0 2px 0 #ffffff30,inset 0 -5px 0 #092f222b}
+.hero:before{content:"";position:absolute;width:210px;height:210px;right:9%;bottom:-115px;border-radius:50%;background:linear-gradient(145deg,#e3ff9a70,#7fc56b18);box-shadow:inset -12px -14px 25px #0c3b2930,inset 8px 8px 18px #ffffff30;pointer-events:none}
+.primary-link{box-shadow:0 5px 0 #9fbd52,0 10px 22px #081f1538;transition:transform .18s,box-shadow .18s}
+.primary-link:hover{transform:translateY(-3px);box-shadow:0 8px 0 #9fbd52,0 14px 26px #081f1538}
+.category-scroller{padding:12px 4px 22px;scrollbar-color:#c5d6b8 transparent}
+.main-category{position:relative;isolation:isolate;overflow:hidden;flex-basis:184px;min-height:140px;border:1px solid #e4ecdc;border-radius:25px;background:linear-gradient(145deg,#fff 0%,#f7faef 100%);box-shadow:0 7px 0 #e2ead9,0 12px 24px #264a3210,inset 0 2px 0 #fff;transition:transform .2s,box-shadow .2s,border-color .2s}
+.main-category:after{content:"";position:absolute;z-index:-1;width:100px;height:100px;right:-28px;top:-35px;border-radius:50%;background:radial-gradient(circle at 32% 28%,#fff 0 7%,#dff0c8 8% 55%,#b8d69a 100%);opacity:.75}
+.main-category:hover,.main-category.active{transform:translateY(-4px);border-color:#a9c58f;background:linear-gradient(145deg,#fff,#f0f7e7);box-shadow:0 10px 0 #d4e4c6,0 18px 28px #244c321c,inset 0 2px 0 #fff}
+.category-icon{position:relative;z-index:1;width:53px;height:53px;border-radius:19px;display:grid;place-items:center;font-size:29px;background:linear-gradient(145deg,#fff,#e9f2df);box-shadow:0 5px 0 #dce8d1,0 8px 15px #274b321c,inset 0 2px 3px #fff}
+.subcategory-panel{border:1px solid #e2eadb;border-radius:24px;background:linear-gradient(145deg,#f7faef,#edf5e5);box-shadow:inset 0 2px 4px #fff,0 8px 20px #274b320c}
+.subcategory-chip{box-shadow:0 3px 0 #e4ebdc;transition:transform .16s,box-shadow .16s}
+.subcategory-chip:hover{transform:translateY(-2px);box-shadow:0 5px 0 #dce8d1}
+.category-next{border:1px solid #dce8d1;background:linear-gradient(145deg,#fff,#e8f2dd);box-shadow:0 5px 0 #d6e4c9,0 9px 18px #274b3218;transition:transform .18s}
+.category-next:active{transform:translateY(3px);box-shadow:0 2px 0 #d6e4c9}
+.products-section{background:linear-gradient(180deg,#f1f6e9,#f8faf4)}
+.product-card{border:1px solid #e4ebdf;border-radius:23px;box-shadow:0 6px 0 #e5ecdf,0 12px 26px #244c3210,inset 0 2px 0 #fff;transition:transform .22s,box-shadow .22s}
+.product-card:hover{transform:translateY(-5px);box-shadow:0 10px 0 #dce8d2,0 20px 32px #244c321b,inset 0 2px 0 #fff}
+.product-photo{background:linear-gradient(145deg,#f8f5e8,#e5f0dc)}
+.product-info{padding:17px}
+.retailer-select{border-radius:12px;background:linear-gradient(180deg,#fff,#f8faf5)}
+.shop-button{border-radius:12px;box-shadow:0 4px 0 #0d3929;transition:transform .16s,box-shadow .16s}
+.shop-button:hover{transform:translateY(-2px);box-shadow:0 6px 0 #0d3929}
+.ad-slot{border-radius:18px;background:linear-gradient(145deg,#fff,#f7f9f3);border-color:#dfe8d7}
+.floating-category-dock{border:1px solid #e3ecdc;background:#ffffffed;box-shadow:0 8px 0 #e8efe2,0 16px 32px #193d2a20,inset 0 2px 0 #fff}
+.dock-grip{box-shadow:inset 0 2px 2px #fff,0 3px 0 #dce8d1}
+.dock-item{background:linear-gradient(145deg,#fff,#edf4e5);box-shadow:0 3px 0 #dce7d3,0 5px 10px #244c3210,inset 0 2px 2px #fff}
+.dock-item:hover,.dock-item.active{transform:translateY(-3px);box-shadow:0 5px 0 #cbdcbb,0 8px 13px #244c321c}
+.about{background:radial-gradient(ellipse at 10% 15%,#eaf3df 0,transparent 50%)}
+@media(max-width:650px){.hero{border-radius:26px}.main-category{flex-basis:158px;min-height:128px}.product-card{border-radius:19px}.product-card:hover{transform:translateY(-2px)}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
 </style></head><body><div class="wrap"><header><a class="logo" href="/">Cart<span>Sprout</span></a><nav class="nav" aria-label="Main navigation"><a href="#about">About</a><a href="#products">Products</a></nav></header><div class="floating-category-dock" id="floating-category-dock" aria-label="Quick category shortcuts"><button class="dock-grip" type="button" aria-label="Drag category shortcuts" title="Drag shortcuts">⠿</button><div class="dock-items"><button type="button" class="dock-item" data-dock-category="food" aria-label="Food and breakfast" title="Food & breakfast">🥑</button><button type="button" class="dock-item" data-dock-category="kitchen" aria-label="Kitchen and home" title="Kitchen & home">🍳</button><button type="button" class="dock-item" data-dock-category="toys" aria-label="Toys and hobbies" title="Toys & hobbies">🧸</button><button type="button" class="dock-item" data-dock-category="everyday" aria-label="Everyday essentials" title="Everyday essentials">🧺</button><button type="button" class="dock-item" data-dock-category="electronics" aria-label="Electronics" title="Electronics">🔌</button><button type="button" class="dock-item" data-dock-category="electrical" aria-label="Electrical and wiring" title="Electrical & wiring">💡</button><button type="button" class="dock-item" data-dock-category="auto" aria-label="Automotive and machinery" title="Automotive & machinery">⚙️</button></div></div>
 <main><section class="hero"><div class="hero-content"><div class="eyebrow">A simpler way to shop</div><h1>Find what you need.<br><em>Choose where to shop.</em></h1><p>Discover useful products across food, home, electronics and automotive essentials. Choose a retailer to explore its available options.</p><div class="hero-actions"><a class="primary-link" href="#categories">Explore categories ↓</a></div></div></section>
 <section class="section" id="categories">
